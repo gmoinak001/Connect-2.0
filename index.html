@@ -43,20 +43,19 @@
         <header style="text-align: center;">
             <h1>Community Campus</h1>
         </header>
-        <section class="experiment" style="width: auto;">
+        <section class="experiment" style="width: auto; height: auto;">
             <div class="make-center">
+                <br>
                 <input type="text" id="room-id" value="abcdef"><br><br>
                 <button id="open-room">Open Peer</button>
                 <button id="join-room">Join Peer</button>
                 <button type="button" onClick="refreshPage()">Close Peer</button>
 
                 <br><br>
-
-
                 <div id="room-urls" style="text-align: center;display: none;background: #F1EDED;margin: 15px -10px;border: 1px solid rgb(189, 189, 189);border-left: 0;border-right: 0;"></div>
             </div>
             <div class="make-center" id="broadcast-viewers-counter"></div>
-            <hr>
+
 
             <div class="make-center">
               <div id="local-videos-container" style="width: 30%; float: left;">
@@ -64,16 +63,16 @@
 
               <div id="remote-videos-container" style="width: 70%; float: right;">
               </div>
-            </br></br></br>
-                <input type="text" id="input-text-chat" placeholder="Enter Text Chat" disabled>
-                <button id="share-file" disabled>Share File</button>
+            </br></br></br></br></br></br>
+                <input type="text" id="input-text-chat" placeholder="Enter Text Chat" disabled style="width: 80%; height: auto;">
+                <button id="share-file" disabled style="margin-top: 5px;">Share File</button>
             </div>
 
             <div id="chat-container">
                 <div id="file-container"></div>
                 <div class="chat-output" style="margin: 10px;"></div>
             </div>
-
+            <br>
         </section>
 
         <script src="/dist/RTCMultiConnection.min.js"></script>
